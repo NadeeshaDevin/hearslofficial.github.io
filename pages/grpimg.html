@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Description</title>
+    <style>
+        
+       
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #zoomed-image {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        #zoomed-image.zoomed {
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div >
+            <!-- Add an image here -->
+            <img id="zoomed-image" src="../img/Group 412.png" alt="Project Image" height="550px" width="550px">
+    
+    <script>
+        const image = document.getElementById("zoomed-image");
+
+        // Toggle the "zoomed" class on click to enable zooming
+        image.addEventListener("click", function() {
+            this.classList.toggle("zoomed");
+        });
+    </script>
+        
+    </div>
+</body>
+</html>
